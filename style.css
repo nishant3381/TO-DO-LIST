@@ -8,6 +8,14 @@ body{
     background: #111;
     height: 100vh;
 }
+.head{
+    text-align: center;
+    color: #76ff03;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 50px;
+   
+}
 .container span1{
     width: 50px;
     height: 50px;
@@ -157,6 +165,15 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 110px 0;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 12px;
+}
 @keyframes animate{
     0%{
         transform: translateY(0);
@@ -168,5 +185,113 @@ ul li span:hover{
     100%{
         transform: translateY(-800px) rotate(360deg);
         opacity: 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    .head{
+        text-align: center;
+        color: #76ff03;
+        font-size: 25px;
+        font-weight: 700;
+        padding-top: 50px;
+    }
+    .container span1{
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        position: fixed;
+        bottom: -180px;
+        z-index: -1;
+        background-color: #000000;
+        box-shadow: 0 0 50px #76ff03,
+                    0 0 100px #76ff03,
+                    0 0 150px #76ff03,
+                    0 0 200px #76ff03;
+        animation: animate 5s linear infinite;
+    }
+    .container span1:nth-child(1){
+        left: 60px;
+        animation-delay: 0.6s;
+    }
+    .container span1:nth-child(2){
+        left: 10%;
+        animation-delay: 3s;
+        width: 40px;
+        height: 40px;
+    }
+    .container span1:nth-child(3){
+        left: 20%;
+        animation-delay: 2s;
+    }
+    .container span1:nth-child(4){
+        left: 30%;
+        animation-delay: 5s;
+        width: 50px;
+        height: 50px;
+    }
+    .container span1:nth-child(5){
+        left: 40%;
+        animation-delay: 1s;
+    }
+    .container span1:nth-child(6){
+        left: 50%;
+        animation-delay: 7s;
+    }
+    .container span1:nth-child(7){
+        left: 60%;
+        animation-delay: 6s;
+        width: 70px;
+        height: 70px;
+    }
+    .container span1:nth-child(8){
+        left: 70%;
+        animation-delay: 8s;
+    }
+    .container span1:nth-child(9){
+        left: 80%;
+        animation-delay: 6s;
+        width: 60px;
+        height: 60px;
+    }
+    .container span1:nth-child(10){
+        left: 90%;
+        animation-delay: 4s;
+    }
+    .todo-app{
+        width: 80%;
+        max-width: 540px;
+        background: #fff;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
+    .button{
+        border: none;
+        background: #76ff03;
+        padding: 0;
+        outline: none;
+        color: #fff;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 40px;
+        
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 30px;
+        background: #eeeeee;
+        padding-left: 0;
+        margin-bottom: 25px;
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 210px 0;
+        color: #fff;
+        font-weight: 300;
+        margin-top: 20px;
+        font-size: 12px;
     }
 }
